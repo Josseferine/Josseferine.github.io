@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josseferine | Redes Sociales</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/josseferine.jpeg">
+</head>
+<body>
+
+    <div class="conteiner">
+        <h2 class="name">Josseferine</h2>
+        <img class="josslogo" src="img/josseferine.jpeg" alt="logo">
+        
+        <div class="div" data-url="https://www.tiktok.com/@josseferine">
+            <img src="img/josseferine.jpeg" class="logotiktok" alt="tiktok">
+            <h2 class="nameperfil">Josseferine</h2>
+            <img src="img/tik.ico" class="tik" alt="tiktok">
+        </div>
+
+        <div class="div" data-url="https://www.youtube.com/@JosseferineShorts">
+            <img src="img/youtube.jpg" class="logotiktok" alt="youtube">
+            <h2 class="nameperfil">Josseferine Short's</h2>
+            <img src="img/you.png" class="tik" alt="youtube">
+        </div>
+
+        <div class="div" data-url="https://kick.com/josseferine">
+            <img src="img/josseferine.jpeg" class="logotiktok" alt="kick">
+            <h2 class="nameperfil">Josseferine</h2>
+            <img src="img/kick.svg" class="tik" alt="kick">
+        </div>
+
+        <div class="div" data-url="https://instagram.com/josseferine">
+            <img src="img/josseferine.jpeg" class="logotiktok" alt="instagram">
+            <h2 class="nameperfil">Josseferine</h2>
+            <img src="img/insta.png" class="tik" alt="instagram">
+        </div>
+
+        <div class="div" data-url="https://www.twitch.tv/josseferine">
+            <img src="img/twich.png" class="logotiktok" alt="twitch">
+            <h2 class="nameperfil">Josseferine</h2>
+            <img src="img/twichs.png" class="tik" alt="twitch">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".div").forEach(div => {
+            div.addEventListener("click", function() {
+                window.open(this.getAttribute("data-url"), "_blank");
+            });
+        });
+    </script>
+    
+</body>
+</html>
